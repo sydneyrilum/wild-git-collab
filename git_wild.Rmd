@@ -35,6 +35,10 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ## PART B: Make problems
 
 ```{r break-it-1}
+ggplot(data = diamonds, aes(x = depth, y = carat, color = cut)) +
+  geom_violin() +
+  theme_minimal()
+  
 # Here are my updates!
 ideal_diamonds <- diamonds %>% 
   filter(cut == "Ideal")
