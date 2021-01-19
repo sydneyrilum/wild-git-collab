@@ -49,8 +49,15 @@ ggplot(data = ideal_diamonds, aes(x = depth, y = carat)) +
 ```
 
 ```{r break-it-2}
+# kept both updates
 ideal_diamonds %>% 
   filter(color == "I")
+
+# Made diamond carat and price graph, colored by cut
+ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) +
+  geom_point() +
+  theme_minimal()
+
 ```
 
 ## END Discussion 3
