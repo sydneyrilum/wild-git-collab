@@ -26,10 +26,10 @@ ggplot(data = diamonds, aes(x = carat, y = price)) +
 # Run the code below to see the original graph
 # Change the code below to make the geom a geom_jitter, and update the theme to theme_light. Update the title to include your first name. 
 
-ggplot(data = diamonds, aes(x = color, y = carat) +
-  geom_violin() +
-  theme_dark() +
-  labs(title = "YOURNAME was here")
+ggplot(data = diamonds, aes(x = color, y = carat)) +
+  geom_jitter() +
+  theme_light() +
+  labs(title = "Lucas was here")
 ```
 
 ## PART B: Make problems
