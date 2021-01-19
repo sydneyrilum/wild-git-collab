@@ -35,9 +35,9 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ## PART B: Make problems
 
 ```{r break-it-1}
-ggplot(data = diamonds, aes(x = depth, y = carat)) +
-  geom_point() +
-  theme_void()
+ggplot(data = diamonds, aes(x = depth, y = carat, color = cut)) +
+  geom_violin() +
+  theme_minimal()
 ```
 
 ```{r break-it-2}
