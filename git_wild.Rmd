@@ -35,9 +35,13 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ## PART B: Make problems
 
 ```{r break-it-1}
-ggplot(data = diamonds, aes(x = depth, y = carat)) +
-  geom_point() +
-  theme_void()
+# Here are my updates!
+ideal_diamonds <- diamonds %>% 
+  filter(cut == "Ideal")
+
+ggplot(data = ideal_diamonds, aes(x = depth, y = carat)) +
+  geom_jitter() +
+  theme_minimal()
 ```
 
 ```{r break-it-2}
